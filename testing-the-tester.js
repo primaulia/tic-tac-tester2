@@ -1,7 +1,7 @@
 var grid = [0,0,0,0,0,0,0,0,0]
 
-var playerOne = [0,0,0,0,0,0,0,0,0]
-var playerTwo = [0,0,0,0,0,0,0,0,0]
+var playerOne1 = [0,0,0,0,0,0,0,0,0]
+var playerTwo1 = [0,0,0,0,0,0,0,0,0]
 var turnCounter = 0
 var PlayerTurn = 1
 
@@ -20,8 +20,8 @@ var winArr = [
 // pass one test at a time
 function restart () {
   grid = [0,0,0,0,0,0,0,0,0]
-  playerOne = [0,0,0,0,0,0,0,0,0]
-  playerTwo = [0,0,0,0,0,0,0,0,0]
+  playerOne1 = [0,0,0,0,0,0,0,0,0]
+  playerTwo1 = [0,0,0,0,0,0,0,0,0]
   turnCounter = 0
   PlayerTurn = 1
 }
@@ -50,20 +50,41 @@ function isGameOver () {
 
 function whoWon () {
   var GameStatus = 0
+  var noWinnerYet = true
+  var TestWinScenarios = 0
   if (turnCounter === 9) {
     GameStatus = 3
   } else {
-     for (var i = 0; i < winArr.length; i++) {
-       if (ArrEqual(playerOne, winArr[i])) {
-         GameStatus = 1
-         break
-       } else if (ArrEqual(playerOne, winArr[i])) {
-         GameStatus = 2
-         break
-     }
-   }
-   return GameStatus
+    while (noWinnerYet && TestWinScenarios < 8) {
+      //console.log('p1 '+TestWinScenarios)
+      if (ArrEqual(playerOne1, winArr[TestWinScenarios])) {
+        GameStatus = 1
+        noWinnerYet = false
+      }
+      TestWinScenarios += 1
+    }
+    if (noWinnerYet) {
+      TestWinScenarios = 0
+      while (noWinnerYet && TestWinScenarios < 8) {
+        //console.log('p2 '+TestWinScenarios)
+        if (ArrEqual(playerTwo1, winArr[TestWinScenarios])) {
+          GameStatus = 2
+          noWinnerYet = false
+        }
+        TestWinScenarios += 1
+      }
+    }
+
+    //  for (var i = 0; i < winArr.length; i++) {
+    //    if (ArrEqual(playerOne1, winArr[i])) {
+    //      GameStatus = 1
+    //      break
+    //    } else if (ArrEqual(playerTwo1, winArr[i])) {
+    //      GameStatus = 2
+    //      break
+    //  }
   }
+  return GameStatus
 }
 
 function playTurn (Index) {
@@ -72,10 +93,10 @@ function playTurn (Index) {
     grid[Index] = 9
     turnCounter += 1
     if (PlayerTurn === 1) {
-      playerOne[Index] = 9
+      playerOne1[Index] = 9
       PlayerTurn = 2
     } else {
-      playerTwo[Index] = 9
+      playerTwo1[Index] = 9
       PlayerTurn = 1
     }
   } else {
