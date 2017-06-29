@@ -1,0 +1,96 @@
+.board{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin: 10px;*/
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  /*display: inline-block;*/
+  border: 1px solid black;
+  transition: all .3s;
+}
+
+.change{
+  background-color: blue;
+}
+
+p{
+  position: absolute;
+  font-size: 150px;
+  margin: 0;
+  opacity: 0;
+  transition: all .8s;
+}
+
+.board:hover{
+  background-color: red;
+}
+
+
+h1{
+  text-align: center;
+}
+
+.selectTurn{
+  text-align: center;
+}
+
+.entireBoard{
+  display: block;
+  width: 606px;
+  height: 606px;
+  margin: auto auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.button{
+  display: block;
+  width: 80px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+body{
+  background-color: rgb(103, 66, 57);
+}
+
+.score{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:200px;
+  height: 150px;
+  left:80%;
+  bottom:70%;
+  border: black solid;
+}
+
+.Xwins, .Owins{
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  display: block;
+  width: 40%;
+  text-align: center;
+  border: 1px black dashed;
+}
+
+.Xwins{
+  left: 5%;
+}
+
+.Owins{
+  right: 5%;
+}
+
+.title{
+  font-size: 30px;
+  display: flex;
+  margin: 0 auto;
+  opacity: 1;
+  display: block;
+}
