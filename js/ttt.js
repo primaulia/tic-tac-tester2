@@ -17,6 +17,8 @@ function tttModule () {
         player = 1
       }
 
+
+      // need to return prev player, so we can use it to manipulate the dom
       return prevPlayer
     }
   }
@@ -47,8 +49,9 @@ function tttModule () {
 
   return {
     playTurn: playTurn,
-    isGameOver: isGameOver,
-    whoWon: whoWon,
-    restart: restart
+    isGameOver: isGameOver
+    // dont need this property anymore, since we're not using it on the main module
+    // whoWon: whoWon,
+    // restart: restart
   }
 }
