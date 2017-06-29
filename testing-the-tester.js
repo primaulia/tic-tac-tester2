@@ -130,11 +130,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[0] + '!') }, 125)
         if (grid[0] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('.Oscore')
+          var tempScore = document.querySelector('.Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[0]
@@ -143,11 +143,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[3] + '!') }, 125)
         if (grid[3] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('Oscore')
+          var tempScore = document.querySelector('Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[3]
@@ -156,11 +156,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[6] + '!') }, 125)
         if (grid[6] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('.Oscore')
+          var tempScore = document.querySelector('.Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[6]
@@ -169,11 +169,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[0] + '!') }, 125)
         if (grid[0] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('.Oscore')
+          var tempScore = document.querySelector('.Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[0]
@@ -182,11 +182,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[1] + '!') }, 125)
         if (grid[1] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('.Oscore')
+          var tempScore = document.querySelector('.Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[1]
@@ -195,11 +195,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[2] + '!') }, 125)
         if (grid[2] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('.Oscore')
+          var tempScore = document.querySelector('.Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[2]
@@ -208,11 +208,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[0] + '!') }, 125)
         if (grid[0] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('.Oscore')
+          var tempScore = document.querySelector('.Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[0]
@@ -221,11 +221,11 @@ function ttt () {
         setTimeout(function () { alert('The winner is Player ' + grid[2] + '!') }, 125)
         if (grid[2] === 1) {
           p1Wins += 1
-          var tempScore = document.querySelector('.Xscore')
+          var tempScore = document.querySelector('.Oscore')
           tempScore.textContent = p1Wins
         } else {
           p2Wins += 1
-          var tempScore = document.querySelector('.Oscore')
+          var tempScore = document.querySelector('.Xscore')
           tempScore.textContent = p2Wins
         }
         return grid[2]
