@@ -5,13 +5,20 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
-  /*flex-direction: row-reverse;*/
 }
 
 .grid {
   background-color: white;
-  width: 30%;
+  width: 33%;
   height: 200px;
-  border: 1px solid red;
+  border: 1px solid rgb(157, 182, 214);
+  transition: background-color 1s;
+}
+
+.grid.one {
+  background-color: rgb(182, 69, 54);
+}
+
+.grid.two {
+  background-color: rgb(51, 124, 33);
 }

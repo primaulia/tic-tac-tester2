@@ -8,10 +8,16 @@ function tttModule () {
     if (grid[index] || isGameOver()) {
       return false
     } else {
+      var prevPlayer = player
+
       grid[index] = player
-      if (player === 1) player = 2
-      else player = 1
-      return true
+      if (player === 1) {
+        player = 2
+      } else {
+        player = 1
+      }
+
+      return prevPlayer
     }
   }
 
